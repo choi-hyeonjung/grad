@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Mooli&family=Noto+Sans+KR&display=swap');
+*{
+    margin: 0;
+    overflow: hidden;
+
+}
+
+h1{
+    color: #FF009E;
+
+    font-family: 'Noto Sans KR', sans-serif;
+}
+p{
+    color: rgb(113, 113, 113);
+    
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.Buttons{
+    background-color: rgb(255, 255, 255);
+    /*grid-template-columns: repeat(auto-fill, minmax(25%, auto));
+    grid-template-rows: repeat(auto-fill, minmax(25%, auto)); */
+    /* grid-template-columns: repeat(auto-fill, minmax(25%, auto));
+    grid-template-rows: repeat(auto-fill, minmax(25%, auto)); */
+    height: 100vh;
+    width: 45vw;
+    position: absolute;
+    right: 0;
+    z-index: 9;
+    padding: 32px;
+}
+
+.button-large{
+    width: 150px;
+    height: 150px;
+    border-radius: 5px;
+    overflow: hidden;
+    border: 2px solid #ffffff;
+    display: inline-block;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+.button-large.on{
+    border: 2px solid #FF009E;
+}
+.button-large > img{
+    height: 150px ;
+}
+.button-large:hover{
+    opacity: 0.5;
+}
+
+.button-small{
+    width: 130px;
+    height: 130px;
+    border-radius: 5px;
+    overflow: hidden;
+    border: 2px solid #FFE7E9;
+    display: inline-block;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+.button-small.on{
+    border: 2px solid #FF009E;
+}
+.button-small > img{
+    height: 130px ;
+}
+.button-small:hover{
+    opacity: 0.5;
+}
+
+
+.button{
+
+}
+
+.flex{
+}
+
+canvas{
+    position: absolute;
+}
+
+#defaultCanvas0{
+    width: calc( 100vh * 4 / 3) !important;
+    height: 100vh !important;
+    
+    /* imac에서 테스트 후 찾을 것 */
+    margin-left: -150px
+}
